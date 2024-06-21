@@ -31,11 +31,20 @@ function media() {
     var res = (n1 + n2 + n3) / 3;
 
     if (res >= 7) {
-        media.textContent = res;
+        media.textContent = res.toFixed(1);
         media.style.color = "green"
         media.style.backgroundColor = "lightgreen"
+        media.style.width = "70px"
+        media.style.textAlign = "center"
+        media.style.padding = "10px"
+        media.style.borderRadius = "20px"
     } else {
-        media.textContent = res;
+        media.textContent = res.toFixed(1);
         media.style.color = "red"
+        media.style.backgroundColor = "lightpink"
+        media.style.width = "70px"
+        media.style.textAlign = "center"
+        media.style.padding = "10px"
+        media.style.borderRadius = "20px"
     }
 }
