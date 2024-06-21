@@ -48,3 +48,20 @@ function media() {
         media.style.borderRadius = "20px"
     }
 }
+
+function contar(){
+    const num = parseFloat($("#numeroInput").val())
+    
+    var resultadoStr = ""
+
+    if(num <= 100){
+        for(var cont = 1; cont <= num; cont++){
+            resultadoStr = resultadoStr + cont + "<br>"
+        }
+        $("#result").html(resultadoStr)
+    }else{
+        $("#result").text("Digite um número menor ou igual a 100")
+    }
+}
+
+

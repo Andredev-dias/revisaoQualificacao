@@ -1,0 +1,21 @@
+body{
+    font-family: "Roboto", sans-serif;
+}
+
+h1{
+    font-family: "Playwrite US Trad", cursive;
+    animation: batata 200ms linear;
+}
+
+h2{
+    color: blue;
+}
+
+.batata{
+    color: red;
+}
+
+.morango{
+    color: lightpink;
+
+}

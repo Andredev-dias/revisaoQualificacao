@@ -6,13 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cálculos simples</title>
     <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+US+Trad:wght@100..400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <h1>Revisão</h1>
     <main>
         <section>
-            <h2>Soma</h2>
+            <h2 class="batata">Soma</h2>
             <input id="so1" type="number" placeholder="Digite um número">
             <input id="so2" type="number" placeholder="Digite um número">
             <button onclick="soma()">CALCULAR</button>
@@ -20,7 +25,7 @@
         </section>
 
         <section>
-            <h2>Subtração</h2>
+            <h2 class="morango">Subtração</h2>
             <input id="sub1" type="number" placeholder="Digite um número">
             <input id="sub2" type="number" placeholder="Digite um número">
             <button onclick="sub()">CALCULAR</button>
@@ -54,9 +59,9 @@
 
         <section>
             <h2>Iteração (for)</h2>
-            <input type="number" placeholder="Digite um número">
-            <button onclick="iteracao()">CONTAR</button>
-            <p id="respContador"></p>
+            <input id="numeroInput" type="number" placeholder="Digite um número">
+            <button onclick="contar()">CONTAR</button>
+            <p id="result"></p>
         </section>
     </main>
 </body>
