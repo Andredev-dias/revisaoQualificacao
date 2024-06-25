@@ -14,6 +14,7 @@ function formatar(date){
 
     return date.toLocaleString("pt-BR", options)
 }
+
 function conferirMensagemWhatsApp(){
     var nome = document.getElementById("nome").value
     var mensagem = document.getElementById("mensagem").value
