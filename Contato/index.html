@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <script src="script.js"></script>
+    <style>
+        body {
+            font-family: "Roboto", sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Enviar mensagem por Whatsapp</h1>
+    <h2>Insira dados para envio de contato</h2>
+    <br><br>
+    <label for="nome">Seu nome:</label>
+    <input type="text" id="nome">
+    <br><br>
+    <label for="mensagem">Mensagem para envio:</label>
+    <textarea type="text" id="mensagem"></textarea>
+    <br><br>
+    <button onclick="conferirMensagemWhatsApp()">Conferir Mensagem</button>
+    <br><br>
+    <p>Nome: <span id="confNome"></span> </p>
+    <p>Mensagem: <span id="confMsg"></span> </p>
+    <p>Data: <span id="confDate"></span> </p>
+    <button onclick="enviar()">Enviar ZAP</button>
+</body>
+</html>
