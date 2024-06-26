@@ -1,22 +1,36 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 body {
     font-family: "Roboto", sans-serif;
-    height: 100vh;
+    min-height: 100vh;
+    height: auto;
     width: 100vw;
     overflow-x: hidden;
+    background-color: rgb(17, 26, 32);
+    color: #ffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 button{
     border-radius: 20px;
-    height: 50px;
-    width: 200px;
+    padding: 10px 20px;
     border: none;
     border: 2px solid #236e71;
     background-color: #43d4d9;
+    transition: all 200ms linear;
+    opacity: 0.8;
 }
 
 button:hover{
     cursor: pointer;
-    box-shadow: #00000050 0px 5px 15px;
+    box-shadow: #0f2a2ba4 0px 5px 15px;
+    transition: all 200ms linear;
+    opacity: 1;
 }
 
 .zapbtn{
@@ -26,9 +40,118 @@ button:hover{
     bottom: 20px;
     right: 20px; */
     opacity: 0.8;
+    border-radius: 100%;
 }
 
 .zapbtn:hover{
   cursor: pointer;
   opacity: 1;
+}
+
+h1, h2{
+    width: 100%;
+    text-align: center;
+}
+
+h2{
+    font-size: 16px;
+}
+
+h1{
+    margin-top: 5vh;
+    animation: letraAnimation 5s ease-out;
+}
+
+@keyframes letraAnimation {
+    0%{
+        color: #236e71;
+        opacity: 0.6;
+    }
+    100%{
+        color: #ffff;
+        opacity: 0.9;
+    }
+}
+
+.wrap-form{
+    width: 500px;
+    height: auto;
+    padding: 20px;
+    background-color: #43d4d9a4;
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: #061213ef 0px 5px 15px;
+}
+
+.wrap-inputs{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+label{
+    width: 100%;
+    text-align: left;
+}
+
+textarea{
+    width: 460px;
+    min-width: 460px;
+    max-width: 460px;
+    height: 100px;
+    min-height: 100px;
+    max-height: 100px;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    box-shadow: #0f2a2ba4 0px 5px 15px;
+}
+
+input{
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    box-shadow: #0f2a2ba4 0px 5px 15px;
+
+}
+
+#printRespostas{
+    background-color: rgba(0, 0, 0, 0.616);
+    padding: 20px;
+    margin-bottom: 40px;
+    border-radius: 20px;
+    box-shadow: #1e5758e1 0px 5px 15px;
+    display: none;
+    animation: fromBottom 1s ease-out;
+}
+
+@keyframes fromBottom {
+    from{
+        opacity: 0;
+        transform: translateY(200px) scale(1.1);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0px) rotate(0deg);
+    }
+}
+
+span{
+    color: #43d4d9;
+}
+
+@media (width <= 800px){
+    .wrap-form{
+        width: 80%;
+    }
+
+    textarea{
+        width: 100%;
+        min-width: 100%;
+        max-width:  100%;
+    }
 }

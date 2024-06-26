@@ -27,6 +27,7 @@ function conferirMensagemWhatsApp() {
     document.getElementById("confNome").textContent = nome
     document.getElementById("confMsg").textContent = mensagem
     document.getElementById("confDate").textContent = formatar(date);
+    document.getElementById("printRespostas").style.display = "block"
 }
 
 
