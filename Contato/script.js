@@ -2,7 +2,7 @@ var nomeGlobal
 var mensagemGlobal
 var dateGlobal
 
-function formatar(date){
+function formatar(date) {
     var options = {
         month: "numeric",
         day: "numeric",
@@ -15,21 +15,32 @@ function formatar(date){
     return date.toLocaleString("pt-BR", options)
 }
 
-function conferirMensagemWhatsApp(){
+function conferirMensagemWhatsApp() {
     var nome = document.getElementById("nome").value
     var mensagem = document.getElementById("mensagem").value
     var date = new Date()
-    
+
     nomeGlobal = nome
     mensagemGlobal = mensagem
     dateGlobal = date
-    
+
     document.getElementById("confNome").textContent = nome
     document.getElementById("confMsg").textContent = mensagem
     document.getElementById("confDate").textContent = formatar(date);
 }
 
 
-function enviar(){
-   console.log(nomeGlobal, mensagemGlobal, dateGlobal)
+function enviar() {
+    var numeroTelefone = document.getElementById("numeroDoCLiente").value;
+
+    var linkWhatsApp = "https://wa.me/" +
+        numeroTelefone +
+        "?text=NOME DO RECEPTOR(A): " +
+        nomeGlobal +
+        " - " +
+        mensagemGlobal +
+        " - " +
+        formatar(dateGlobal)
+
+    window.open(linkWhatsApp, "_blank")
 }
