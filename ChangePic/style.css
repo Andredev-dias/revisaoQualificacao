@@ -54,15 +54,25 @@ body{
     filter: grayscale(0);
 }
 
-button{
-
+#btnStyle{
+    background: none;
+    border: 2px solid lightgreen;
+    color: lightgreen;
+    padding: 10px 50px;
+    border-radius: 999px;
     transition: all 200ms linear;
-
 }
 
-button:hover{
-
+#btnStyle:hover{
+    cursor: pointer;
     transition: all 200ms linear;
-box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    box-shadow: rgba(144, 238, 144, 0.331) 0px 5px 15px;
+}
+
+p, h1{
+    color: #ffff;
+    font-size: 2rem;
+    width: 90%;
+    text-align: center;
 }
 
