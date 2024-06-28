@@ -10,7 +10,7 @@
 }
 
 html{
-    background: #f7a1df;
+    background: #9c2179c7;
 }
 
 body{
@@ -60,6 +60,7 @@ body{
     color: lightgreen;
     padding: 10px 50px;
     border-radius: 999px;
+    font-weight: 900;
     transition: all 200ms linear;
 }
 
