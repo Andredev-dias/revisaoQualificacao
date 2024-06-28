@@ -1,14 +1,15 @@
-function trocar(){
+function trocar() {
     const html = document.documentElement;
     html.classList.toggle("light")
 }
 
-function trocar2(){
+function trocar2() {
     const html = document.documentElement;
 
-    if(html.classList.contains("light")){
+    if (html.classList.contains("light")) {
         html.classList.remove("light")
-    }else{
+    } else {
         html.classList.add("light")
     }
+
 }
