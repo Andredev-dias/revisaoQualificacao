@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Ubuntu", sans-serif;
+}
+
+.light{
+    background: #131022d6;
+}
+
+html{
+    background: #f7a1df;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10vh;
+    width: 100vw;
+    height: 100vh;
+}
+
+.wrap-image{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 100%;
+    border: 10px solid white;
+    transition: all 200ms linear;
+}
+
+.wrap-image:hover{
+    transition: all 200ms linear;
+    box-shadow: rgb(85, 91, 255) 0px 0px 0px 3px, rgb(31, 193, 27) 0px 0px 0px 6px, rgb(255, 217, 19) 0px 0px 0px 9px, rgb(255, 156, 85) 0px 0px 0px 12px, rgb(255, 85, 85) 0px 0px 0px 15px;
+}
+
+#profile{
+    position: absolute;
+    left: -10px;
+    width: 300px;
+    height: 300px;
+    transition: all 200ms linear;
+    filter: grayscale(100%);
+}
+
+#profile:hover{
+    transform: scale(1.1);
+    transition: all 200ms linear;
+    cursor: crosshair;
+    filter: grayscale(0);
+}
+
+button{
+
+    transition: all 200ms linear;
+
+}
+
+button:hover{
+
+    transition: all 200ms linear;
+box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
