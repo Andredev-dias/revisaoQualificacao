@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,14 +8,19 @@
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.3/xlsx.full.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     <h1>Produtos para tabela Excel</h1>
     <br>
     <div class="wrap-inputs">
-        <input type="text" placeholder="Nome do produto" id="nome"/>
-        <input type="number" placeholder="Valor do produto" id="valor"/>
-        <input type="number" placeholder="Quantidade unitária" id="quantidade"/>
+        <input type="text" placeholder="Nome do produto" id="nome" />
+        <input type="number" placeholder="Valor do produto" id="valor" />
+        <input type="number" placeholder="Quantidade unitária" id="quantidade" />
     </div>
     <br>
     <div>
@@ -39,4 +45,5 @@
         <button onclick="exportarParaExcel()">Gerar Excel</button>
     </div>
 </body>
+
 </html>
