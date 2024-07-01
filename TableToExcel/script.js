@@ -22,7 +22,7 @@ function adicionarItem(){
 
     // inserir valores dentro das celulas criadas acima
     celulaNome.innerHTML = nome
-    // celulaValor.innerHTML = `$${valor}`
+    celulaValor.innerHTML = `$${valor}`  
     celulaValor.innerHTML = "$" + valor
     celulaQuantidade.innerHTML = quantidade
     celulaTotal.innerHTML = valor * quantidade
@@ -33,11 +33,16 @@ function adicionarItem(){
     document.getElementById("quantidade").value = ""
 }
 
+
 function exportarParaExcel(){
     var tabela = document.getElementById("tabela")
     var nomeArquivo = "tabela_produtos.xlsx"
     var wb = XLSX.utils.table_to_book(tabela, {sheet: "Tabela de Produtos"})
     XLSX.writeFile(wb, nomeArquivo)
 }
+
+
+
+
 
 // const exportarParaExcel = () => {XLSX.writeFile(XLSX.utils.table_to_book(document.getElementById("tabela"), {sheet: "Tabela de Produtos"}), "tabela_produtos.xlsx")}
