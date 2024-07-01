@@ -47,4 +47,14 @@ button:hover{
     cursor: pointer;
 }
 
+table{
+    background-color: #742b04a3;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+thead{
+   text-align: left;
+}
+
 
