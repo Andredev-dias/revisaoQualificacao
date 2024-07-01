@@ -27,6 +27,7 @@ function adicionarItem(){
     celulaQuantidade.innerHTML = quantidade
     celulaTotal.innerHTML = valor * quantidade
 
+
     // Limpar os campos de entrada
     document.getElementById("nome").value = ""
     document.getElementById("valor").value = ""
@@ -40,9 +41,6 @@ function exportarParaExcel(){
     var wb = XLSX.utils.table_to_book(tabela, {sheet: "Tabela de Produtos"})
     XLSX.writeFile(wb, nomeArquivo)
 }
-
-
-
 
 
 // const exportarParaExcel = () => {XLSX.writeFile(XLSX.utils.table_to_book(document.getElementById("tabela"), {sheet: "Tabela de Produtos"}), "tabela_produtos.xlsx")}
