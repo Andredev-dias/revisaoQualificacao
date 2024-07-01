@@ -27,13 +27,11 @@ function adicionarItem(){
     celulaQuantidade.innerHTML = quantidade
     celulaTotal.innerHTML = valor * quantidade
 
-
     // Limpar os campos de entrada
     document.getElementById("nome").value = ""
     document.getElementById("valor").value = ""
     document.getElementById("quantidade").value = ""
 }
-
 
 function exportarParaExcel(){
     var tabela = document.getElementById("tabela")
