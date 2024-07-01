@@ -22,7 +22,7 @@ function adicionarItem(){
 
     // inserir valores dentro das celulas criadas acima
     celulaNome.innerHTML = nome
-    celulaValor.innerHTML = `$${valor}`  
+    // celulaValor.innerHTML = `$${valor}`  
     celulaValor.innerHTML = "$" + valor
     celulaQuantidade.innerHTML = quantidade
     celulaTotal.innerHTML = valor * quantidade
