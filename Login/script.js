@@ -22,8 +22,8 @@ function login(){
 
 function fecharError(){
     document.getElementById("error-modal").style.display = "none"
-     document.getElementById("nome").style.border = "2px solid #909090"
-        document.getElementById("senha").style.border = "2px solid #909090"
+    document.getElementById("nome").style.border = "2px solid #909090"
+    document.getElementById("senha").style.border = "2px solid #909090"
 }
 
 
